@@ -1,7 +1,7 @@
 <html lang="en"><head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Anwesha Seth - Portfolio </title>
+<title>Portfolio - Anwesha Seth</title>
 <meta name="description" content="Anwesha Seth — Digital Strategy &amp; Marketing Communications Specialist. Good strategy still has to sound like a person wrote it.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -510,6 +510,42 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 .lightbox img{max-width:96%;max-height:96%;object-fit:contain;border-radius:12px;box-shadow:0 30px 80px rgba(0,0,0,.5)}
 .lightbox-close{position:absolute;top:1.4rem;right:1.4rem;width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:var(--cream);font-size:1.4rem;display:flex;align-items:center;justify-content:center;cursor:pointer}
 .lightbox-close:hover{background:var(--pink-500)}
+
+/* ===== FROM SCRATCH + META ADS + ELEVENLABS (added) ===== */
+.scratch{background:var(--cream);overflow:hidden}
+.scratch-head{display:grid;grid-template-columns:1.2fr 1fr;gap:3rem;align-items:end}
+@media(max-width:780px){.scratch-head{grid-template-columns:1fr;gap:1rem}}
+.channel-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1.4rem;margin-top:3rem}
+.channel-card{background:var(--white);border:1px solid var(--pink-100);border-radius:22px;padding:1.2rem 1.2rem 1.5rem;text-align:center;transition:transform .4s,box-shadow .4s}
+.channel-card:hover{transform:translateY(-6px);box-shadow:0 24px 40px -24px rgba(255,79,139,.35)}
+.channel-card .ch-shot{display:block;aspect-ratio:9/16;max-height:330px;margin:0 auto 1.1rem;border-radius:14px;overflow:hidden;border:1.5px solid var(--pink-200);background:var(--ink);cursor:zoom-in}
+.channel-card .ch-shot img{width:100%;height:100%;object-fit:cover;object-position:top;display:block}
+.channel-card .ch-num{font-family:var(--serif);font-size:2.4rem;font-weight:300;color:var(--pink-500);line-height:1}
+.channel-card .ch-label{font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--gray);margin:.4rem 0 .2rem}
+.channel-card .ch-note{font-size:.85rem;color:var(--ink-soft);line-height:1.5}
+.channel-card.fb{display:flex;flex-direction:column;justify-content:center;background:linear-gradient(135deg,var(--pink-50),var(--peach));min-height:260px}
+.channel-card.fb .ch-num{font-size:3.4rem}
+.meta-band{margin-top:4rem;border-radius:28px;background:var(--ink);color:var(--cream);padding:2.6rem;position:relative;overflow:hidden;box-shadow:0 40px 70px -40px rgba(255,79,139,.55)}
+.meta-band::before{content:"";position:absolute;right:-90px;top:-90px;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,rgba(255,79,139,.45),transparent 70%)}
+.meta-band-top{position:relative;display:grid;grid-template-columns:1.1fr 1fr;gap:2.4rem;align-items:center}
+@media(max-width:900px){.meta-band{padding:1.6rem}.meta-band-top{grid-template-columns:1fr;gap:1.6rem}}
+.meta-flag{display:inline-block;font-family:var(--script);font-size:1.7rem;color:var(--pink-300);line-height:1;margin-bottom:.6rem}
+.meta-band h3{font-family:var(--serif);font-weight:400;font-size:clamp(1.7rem,3.2vw,2.6rem);line-height:1.12;margin-bottom:1rem}
+.meta-band h3 em{font-style:italic;color:var(--pink-300)}
+.meta-band p{color:rgba(255,248,243,.78);line-height:1.7;font-size:1rem;margin-bottom:1.3rem}
+.meta-chips{display:flex;flex-wrap:wrap;gap:.5rem}
+.meta-chips span{padding:.55rem 1rem;border-radius:999px;background:var(--pink-500);color:var(--white);font-size:.82rem;font-weight:600}
+.meta-shot{display:block;border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,.18);background:var(--white);cursor:zoom-in;box-shadow:0 20px 40px -20px rgba(0,0,0,.6)}
+.meta-shot img{width:100%;display:block}
+.meta-shot-cap{font-size:.75rem;color:rgba(255,248,243,.55);margin-top:.6rem;text-align:center;font-style:italic}
+.eleven{margin-top:2rem;display:grid;grid-template-columns:230px 1fr;gap:2.2rem;align-items:center;background:var(--white);border:1px solid var(--pink-100);border-radius:22px;padding:1.6rem}
+@media(max-width:700px){.eleven{grid-template-columns:1fr;justify-items:center;text-align:center}}
+.eleven-video{width:230px;max-width:100%;aspect-ratio:9/16;border-radius:16px;overflow:hidden;background:var(--ink);border:1.5px solid var(--pink-200);box-shadow:0 16px 30px -14px rgba(0,0,0,.25)}
+.eleven-video video{width:100%;height:100%;object-fit:cover;display:block}
+.eleven .eyebrow{margin-bottom:.8rem}
+.eleven h3{font-family:var(--serif);font-weight:500;font-size:clamp(1.4rem,2.6vw,1.9rem);line-height:1.2;margin-bottom:.8rem;color:var(--ink)}
+.eleven h3 em{color:var(--pink-500);font-style:italic}
+.eleven p{color:var(--gray);line-height:1.7;font-size:.98rem;max-width:520px}
 </style>
 </head>
 <body style="">
@@ -526,6 +562,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
   <a href="#top" class="nav-logo">A<span>.</span>Seth</a>
   <div class="nav-links">
     <a href="#scale">Impact</a>
+    <a href="#scratch">Built from Scratch</a>
     <a href="#about">About</a>
     <a href="#work">Experience</a>
     <a href="#certs">Certificates</a>
@@ -854,6 +891,65 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
   </div>
 </section>
 
+<!-- BUILT FROM SCRATCH + META ADS -->
+<section id="scratch" class="section scratch">
+  <div class="container">
+    <div class="scratch-head reveal">
+      <div>
+        <span class="eyebrow">Built from zero</span>
+        <h2 class="section-title">I didn't inherit an audience.<br><em>I built one.</em></h2>
+      </div>
+      <p class="section-sub">At AI Business Partners I set up every social media channel from scratch, then kept showing up until they grew. Here's where they stand today.</p>
+    </div>
+
+    <div class="channel-grid">
+      <div class="channel-card reveal">
+        <a class="ch-shot lightbox-trigger" data-img="images/channel-youtube.jpeg"><img src="images/channel-youtube.jpeg" alt="AI Business Partners YouTube channel with 1.11K subscribers"></a>
+        <div class="ch-num">1.11K</div>
+        <div class="ch-label">YouTube subscribers</div>
+        <div class="ch-note">Channel created and grown from scratch</div>
+      </div>
+      <div class="channel-card reveal">
+        <a class="ch-shot lightbox-trigger" data-img="images/channel-linkedin.jpeg"><img src="images/channel-linkedin.jpeg" alt="AI Business Partners LinkedIn page with 1K followers"></a>
+        <div class="ch-num">1K</div>
+        <div class="ch-label">LinkedIn followers</div>
+        <div class="ch-note">Company page built from scratch</div>
+      </div>
+      <div class="channel-card reveal">
+        <a class="ch-shot lightbox-trigger" data-img="images/channel-instagram.jpeg"><img src="images/channel-instagram.jpeg" alt="AI Business Partners Instagram with 684 followers and 60 posts"></a>
+        <div class="ch-num">684</div>
+        <div class="ch-label">Instagram followers</div>
+        <div class="ch-note">60 posts and counting</div>
+      </div>
+      <div class="channel-card fb reveal">
+        <div class="ch-num">2K</div>
+        <div class="ch-label">Facebook followers</div>
+        <div class="ch-note">Page set up and grown from scratch</div>
+      </div>
+    </div>
+
+    <!-- HIGHLIGHT: Meta business account + ads -->
+    <div class="meta-band reveal">
+      <div class="meta-band-top">
+        <div>
+          <span class="meta-flag">highlight ✿</span>
+          <h3>Set up the Meta Business account, then ran the <em>campaign ads and lead ads</em> myself.</h3>
+          <p>I created the brand's Meta Business account from the ground up, connected the Facebook page and Instagram, and use it to run paid campaign ads and lead ads, on top of the organic content.</p>
+          <div class="meta-chips">
+            <span>Meta Business account</span>
+            <span>Campaign ads</span>
+            <span>Lead ads</span>
+          </div>
+        </div>
+        <div>
+          <a class="meta-shot lightbox-trigger" data-img="images/meta-business-suite.jpeg"><img src="images/meta-business-suite.jpeg" alt="Meta Business Suite for AI Business Partners showing 2K Facebook followers, 684 Instagram followers and a Create ad button"></a>
+          <div class="meta-shot-cap">Meta Business Suite, AI Business Partners</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ABOUT — Photo Collage -->
 <section id="about" class="section about">
   <span class="about-deco">a little about me ✦</span>
@@ -909,7 +1005,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
         <span class="service-num">04</span>
         <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="3"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><path d="M21 15l-5-5L5 21"></path></svg></div>
         <h3>Social Media Management</h3>
-        <p>Running a brand's day-to-day online life — I've owned the EU's LinkedIn page, scripted YouTube shorts for a VC firm, and now manage Instagram, LinkedIn, Facebook &amp; YouTube for a B2B training venture, calendar to caption.</p>
+        <p>Running a brand's day-to-day online life — I've owned the EU's LinkedIn page, scripted YouTube shorts for a VC firm, and built all four social channels of a B2B training venture from scratch, plus its Meta ads, calendar to caption.</p>
       </div>
       <div class="service-card reveal">
         <span class="service-num">05</span>
@@ -945,7 +1041,8 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
           <h4>AI Business Partners</h4>
           <div class="role">Marketing &amp; Client Relations Manager · Part-time</div>
           <ul class="points">
-            <li>Run brand presence and content across Instagram, LinkedIn, Facebook &amp; YouTube for a B2B AI training venture that's now trained 200+ business owners</li>
+            <li>Built the brand's Instagram, LinkedIn, Facebook &amp; YouTube channels from scratch and grew them to 1.11K YouTube subscribers, 1K LinkedIn followers, 2K Facebook followers and 684 Instagram followers, for a B2B AI training venture that's now trained 200+ business owners</li>
+            <li>Set up the Meta Business account and run campaign ads and lead ads</li>
             <li>Build and hold C-suite client relationships, and produce testimonial videos and marketing collateral</li>
           </ul>
         </div>
@@ -1107,6 +1204,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
           <span class="skill-tag">Content Strategy</span>
           <span class="skill-tag">Consumer &amp; Competitive Research</span>
           <span class="skill-tag">Brand Storytelling</span>
+          <span class="skill-tag featured">Meta Campaign &amp; Lead Ads</span>
           <span class="skill-tag">Social Media Management</span>
           <span class="skill-tag">Live Event Coverage</span>
           <span class="skill-tag">Creative Briefing</span>
@@ -1125,6 +1223,8 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
           <span class="skill-tag featured">Canva</span>
           <span class="skill-tag featured">Adobe Photoshop</span>
           <span class="skill-tag featured">Adobe Premiere Pro</span>
+          <span class="skill-tag featured">ElevenLabs</span>
+          <span class="skill-tag">Gallabox</span>
           <span class="skill-tag">Meta Business Suite</span>
           <span class="skill-tag">Meta Ad Library</span>
           <span class="skill-tag">Custom GPT</span>
@@ -1136,6 +1236,16 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
           <span class="skill-tag">WordPress</span>
           <span class="skill-tag">MS Excel &amp; Office</span>
         </div>
+      </div>
+    </div>
+    <div class="eleven reveal">
+      <div class="eleven-video">
+        <video controls preload="metadata" playsinline poster="images/elevenlabs-persona-poster.jpg"><source src="images/elevenlabs-persona.mp4" type="video/mp4">Your browser doesn't support video.</video>
+      </div>
+      <div>
+        <span class="eyebrow">ElevenLabs</span>
+        <h3>I made an AI <em>persona of myself</em> in ElevenLabs.</h3>
+        <p>A hands-on experiment with ElevenLabs: building a voice-and-video persona of me. Press play to see it.</p>
       </div>
     </div>
   </div>
